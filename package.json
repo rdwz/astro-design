@@ -1,0 +1,22 @@
+{
+  "name": "astro",
+  "version": "0.0.1",
+  "description": "Magnetis design system",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "postcss src/index.css -o dist/astro.css"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.0",
+    "docz": "^0.11.2",
+    "postcss-cli": "^6.0.0",
+    "postcss-css-variables": "^0.9.0",
+    "postcss-import": "^12.0.0"
+  }
+}

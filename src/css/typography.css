@@ -1,0 +1,9 @@
+p.text--small {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+p.text--large {
+  font-size: 20px;
+  line-height: 36px;
+}
