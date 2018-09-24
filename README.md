@@ -1,5 +1,5 @@
 ## Install
 
-``` html
-<link href="https://fonts.googleapis.com/css?family=Martel|Poppins" rel="stylesheet">
+```html
+<link href="https://fonts.googleapis.com/css?family=Lato|Poppins" rel="stylesheet">
 ```
