@@ -1,6 +1,78 @@
 :root {
-  --color-moon-900: #1C2124;
-  --color-earth-800: #276F2D;
+  --color-earth-100: #B8FCAC;
+  --color-earth-200: #9CF184;
+  --color-earth-300: #88E967;
+  --color-earth-400: #74E24A;
+  --color-earth-500: #56B53F;
+  --color-earth-600: #469D39;
   --color-earth-700: #388833;
+  --color-earth-800: #276F2D;
+  --color-earth-900: #145327;
+  --color-earth-1000: #084222;
+
+  --color-mars-100: #FFCACE;
+  --color-mars-200: #F6B1B5;
+  --color-mars-300: #EA9297;
+  --color-mars-400: #DD676B;
+  --color-mars-500: #D45459;
+  --color-mars-600: #AC3C40;
+  --color-mars-700: #9A3135;
+  --color-mars-800: #7B1E22;
+  --color-mars-900: #651115;
+  --color-mars-1000: #500508;
+
+  --color-moon-100: #F6F7F8;
+  --color-moon-200: #E9EEF2;
+  --color-moon-300: #AFBEC9;
+  --color-moon-400: #8296A4;
+  --color-moon-500: #597183;
+  --color-moon-600: #495C69;
+  --color-moon-700: #3F4C55;
+  --color-moon-800: #384248;
+  --color-moon-900: #32383C;
+  --color-moon-1000: #1C2124;
+
   --color-space-100: #FFF;
+  --color-space-200: #F5F5F5;
+  --color-space-300: #E5E5E5;
+  --color-space-400: #C5C5C5;
+  --color-space-500: #A5A5A5;
+  --color-space-600: #858585;
+  --color-space-700: #656565;
+  --color-space-800: #454545;
+  --color-space-900: #353535;
+  --color-space-1000: #202020;
+
+  --color-sun-100: #FFFEC1;
+  --color-sun-200: #FBEE88;
+  --color-sun-300: #F7E05B;
+  --color-sun-400: #F4D330;
+  --color-sun-500: #F1C500;
+  --color-sun-600: #CEA800;
+  --color-sun-700: #B19100;
+  --color-sun-800: #8F7600;
+  --color-sun-900: #685500;
+  --color-sun-1000: #4B3E00;
+  
+  --color-uranus-100: #A6F7FF;
+  --color-uranus-200: #86E3F9;
+  --color-uranus-300: #67CFF3;
+  --color-uranus-400: #3DB5EB;
+  --color-uranus-500: #159CE4;
+  --color-uranus-600: #147EC1;
+  --color-uranus-700: #1663A0;
+  --color-uranus-800: #16518B;
+  --color-uranus-900: #183A6E;
+  --color-uranus-1000: #182758;
+
+  --color-venus-100: #FFC3F9;
+  --color-venus-200: #F0A0E9;
+  --color-venus-300: #E78ADE;
+  --color-venus-400: #E078D6;
+  --color-venus-500: #C763BA;
+  --color-venus-600: #AB4B9A;
+  --color-venus-700: #993C85;
+  --color-venus-800: #842A6D;
+  --color-venus-900: #6B1550;
+  --color-venus-1000: #5C083F;
 }
