@@ -1,0 +1,10 @@
+:root {
+  --gradient-nebulosa: linear-gradient(47.32deg, #D991E0 0%, #00C6D4 60.06%, #00EA60 100%);
+  --gradient-andromeda: linear-gradient(45deg, #EA9297 0%, #E078D6 100%);
+  --gradient-sombrero: linear-gradient(45.52deg, #9CF184 0%, #3DB5EB 100%);
+  --gradient-milky-way: linear-gradient(44.64deg, #159CE4 0%, #E078D6 100%);
+  --gradient-centaurus: linear-gradient(225deg, #E078D6 0%, #993C85 100%);
+  --gradient-whirlpool: linear-gradient(225deg, #9CF184 0%, #56B53F 100%);
+  --gradient-cartwheel: linear-gradient(45deg, #147EC1 0%, #3DB5EB 100%);
+  --gradient-black-hole: linear-gradient(225deg, #3F4C55 0%, #1C2124 100%);
+}
