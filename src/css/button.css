@@ -3,11 +3,11 @@
   background-color: var(--color-earth-800);
   border: none;
   color: var(--color-space-100);
-  cursor:pointer;
+  cursor: pointer;
   display: block;
   position: relative;
   padding: 14px 48px;
-  white-space:nowrap;
+  white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
@@ -18,7 +18,7 @@
 .btn:hover::before,
 .btn:active::before,
 .btn:disabled::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -27,15 +27,15 @@
 }
 
 .btn:hover::before {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn:active::before {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn:disabled::before {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .btn:disabled {
