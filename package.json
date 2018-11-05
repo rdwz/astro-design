@@ -20,7 +20,8 @@
   "scripts": {
     "docz:dev": "docz dev",
     "build": "postcss src/index.css -o dist/astro.css",
-    "lint:css": "stylelint src/css/**/*.css"
+    "lint:css": "stylelint src/css/**/*.css",
+    "ci:build": "npm run build && npm run lint:css"
   },
   "dependencies": {
     "flexboxgrid": "^6.3.1",
