@@ -19,6 +19,8 @@
   },
   "scripts": {
     "docz:dev": "docz dev",
+    "docs:build": "docz build",
+    "docs:publish": "npm run-script docs:build && gh-pages --dist .docz/dist --message 'Update site [ci skip]'",
     "build": "postcss src/index.css -o dist/astro.css",
     "lint:css": "stylelint src/css/**/*.css",
     "ci:build": "npm run build && npm run lint:css"
@@ -32,6 +34,7 @@
     "cssnano": "^4.1.0",
     "docz": "^0.12.5",
     "docz-plugin-css": "^0.11.0",
+    "gh-pages": "^2.0.1",
     "postcss-cli": "^6.0.0",
     "postcss-css-variables": "^0.9.0",
     "postcss-import": "^12.0.0",
