@@ -1,47 +1,33 @@
-.display {
+/* Looking for headings? They aren't here; headings are in h1-h4 element selectors in base.css file */
+
+/* Display */
+
+.text--display {
   font-size: 64px;
   font-weight: 700;
-  line-height: 80px;
 }
 
-.subhead {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-.subhead--small {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.subhead--large {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 36px;
-}
+/* Paragraph - medium size is in default p element */
 
 p.text--small {
   font-size: 12px;
-  line-height: 18px;
 }
 
 p.text--large {
   font-size: 24px;
-  line-height: 36px;
 }
 
-p.font--secondary {
-  font-size: 24px;
-  line-height: 28px;
+/* Secondary font */
+
+p.text--secondary {
   font-family: 'Lato', sans-serif;
+  font-size: 24px;
 }
 
-p.font--secondary.text--small {
+p.text--secondary.text--small {
   font-size: 16px;
 }
 
-p.font--secondary.text--large {
+p.text--secondary.text--large {
   font-size: 32px;
 }
