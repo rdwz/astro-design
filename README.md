@@ -44,7 +44,7 @@ import { Button } from './Button'
 
 <Playground>
   <Button>Click me</Button>
-  <Button class="secondary">Click me</Button>
+  <Button classname="secondary">Click me</Button>
 </Playground>
 ```
 
