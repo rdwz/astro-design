@@ -1,5 +1,5 @@
 # Astro
-## A design system by Magnetis :female-astronaut:
+## A design system by Magnetis 👩‍🚀
 
 Made for **Magnetis**' designers, developers, product managers, data analysts, data scientists, stakeholders and enthusiasts, **Astro** helps us protect the brand concepts, elevate consistency of user experience and increase the speed and efficiency of how we design and build products for our customers.
 
