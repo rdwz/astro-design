@@ -90,7 +90,7 @@ It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](
 
 ## Contact us
 
-Found a bug? Please see if it was already reported on our [issues page](https://github.com/magnetis/astro/issues/new). If you can't find a matching report, you can [open a new issue](https://github.com/magnetis/astro/issues/new) including as much information as you can gather. We appreciate it!
+Found a bug? Please see if it was already reported on our [issues page](https://github.com/magnetis/astro/issues). If you can't find a matching report, you can [open a new issue](https://github.com/magnetis/astro/issues/new) including as much information as you can gather. We appreciate it!
 
 Any lingering questions? You can contact us at [dev@magnetis.com.br](mailto:dev@magnetis.com.br).
 
