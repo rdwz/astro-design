@@ -18,6 +18,12 @@ export default {
       },
       h1: {
         fontFamily: "'Poppins', sans-serif",
+      },
+      playground: {
+        '& > *': {
+          boxSizing: 'border-box',
+          margin: '5px'
+        }
       }
     }
   }
