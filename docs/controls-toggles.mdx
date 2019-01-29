@@ -1,0 +1,36 @@
+---
+name: Controls & Toggles
+---
+
+import '../src/index.css'
+import { Playground } from 'docz'
+
+# controls & toggles
+
+## checkboxes
+
+Checkboxes are used when a user might select multiple options from a list, or when a single specific action is required - like reading a contract.
+
+Mouseover to view `:hover` state.
+
+<Playground>
+  <div className="checkbox">
+    <input type="checkbox" id="checkbox1" />
+    <label htmlFor="checkbox1">Checkbox</label>
+  </div>
+
+  <div className="checkbox">
+    <input type="checkbox" id="checkbox2" checked />
+    <label htmlFor="checkbox2">Checked</label>
+  </div>
+
+  <div className="checkbox checkbox--indeterminate">
+    <input type="checkbox" id="checkbox3" checked />
+    <label htmlFor="checkbox3">Indeterminate</label>
+  </div>
+
+  <div className="checkbox checkbox--disabled">
+    <input type="checkbox" id="checkbox4" disabled />
+    <label htmlFor="checkbox4">Disabled</label>
+  </div>
+</Playground>
