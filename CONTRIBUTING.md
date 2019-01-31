@@ -75,7 +75,9 @@ Wanna dive deeper into Docz? You can [read their tutorial](https://www.docz.site
 
 ### Publishing your changes to Astro online docs
 
-Once your pull request has been approved and merged with the master branch, you must deploy Astro again to GitHub Pages to make sure everyone views the most recent version of the project.
+We **don't** update the online docs everytime there's a new merge to master. You should only do this if you're creating a new release. No spoilers! ;)
+
+Here's how to deploy to GitHub Pages:
 
 In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` or `npm run docs:publish` to deploy.
 
