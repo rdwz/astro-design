@@ -1,0 +1,114 @@
+.a-input {
+  position: relative;
+  display: inline-block;
+}
+
+.a-input > input {
+  width: 100%;
+  padding: 22px 44px 12px 16px;
+  border: 1px solid var(--color-moon-500);
+  border-radius: 8px;
+  background-color: var(--color-space-100);
+}
+
+.a-input > label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  color: var(--color-moon-300);
+  font: var(--font-secondary);
+}
+
+.a-input--validated > input {
+  border: 1px solid var(--color-earth-400);
+}
+
+.a-input--validated > label {
+  color: var(--color-moon-300);
+}
+
+.a-input--invalid > input {
+  border: 1px solid var(--color-mars-500);
+}
+
+.a-input--invalid > label {
+  color: var(--color-mars-500);
+}
+
+.a-input > input:focus {
+  border: 1px solid var(--color-uranus-500);
+}
+
+.a-input > input:focus + label {
+  top: 5px;
+  color: var(--color-uranus-500);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.a-input > .a-input--floating-label {
+  top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.a-input--validated > input:focus + label {
+  color: var(--color-earth-400);
+}
+
+.a-input--validated > input:focus {
+  border: 1px solid var(--color-earth-400);
+}
+
+.a-input--validated::after {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  content: '';
+  mask-image: url('../../assets/icons/check.svg');
+  background-color: var(--color-earth-400);
+}
+
+.a-input--invalid > input:focus + label {
+  color: var(--color-mars-500);
+}
+
+.a-input--invalid > input:focus {
+  border: 1px solid var(--color-mars-500);
+}
+
+.a-input--invalid::after {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  content: '';
+  background-color: var(--color-mars-500);
+  mask-image: url('../../assets/icons/alert.svg');
+}
+
+.a-input > .a-input__error {
+  position: absolute;
+  display: block;
+  margin: 4px 16px;
+  color: var(--color-mars-500);
+  font: var(--font-secondary);
+  font-size: 12px;
+}
+
+.a-input--disabled > input:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--color-moon-200);
+  background-color: var(--color-moon-100);
+}
+
+.a-input--disabled > input:disabled + label {
+  cursor: not-allowed;
+  color: var(--color-moon-300);
+  font: var(--font-secondary);
+}
