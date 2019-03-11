@@ -8,6 +8,8 @@ import HandleSliderValue from './js/slider';
 
 # controls & toggles
 
+Users can see different experiences throughout the platform that will demand different components and interactions according to the context. These microinteractions help build excellent user experience and enrich the product itself.
+
 ## radio buttons
 
 Radio buttons appear when the user must select only one option from more than two.
@@ -56,7 +58,7 @@ Default label behavior is top alignment. You can add the `a-radio--align-middle`
 
 ## checkboxes
 
-Checkboxes are used when a user might select multiple options from a list, or when a single specific action is required - like reading a contract.
+Checkboxes are used when a user might select multiple options from a list, or when a single specific action is required - like agreeing to terms and conditions.
 
 Mouseover to view `:hover` state.
 
@@ -136,3 +138,74 @@ Mouseover and click to view `:hover` and `:active` state.
 </Playground>
 
 <HandleSliderValue />
+
+## tabs
+
+Tabs are used when the user can quickly navigate and switch between views and states of the same context.
+
+Each tab can be created both with or without Astro icons. To add an icon, follow the markup structure suggested in the sample below.
+
+Mouseover to view `:hover` state, and click on a tab to see its content.
+
+<Playground>
+  <div className="a-tabs">
+    <input className="a-tabs__item" type="radio" id="tab1" name="tabs1" defaultChecked />
+    <label className="a-tabs__label" htmlFor="tab1">
+      <i className="a-icon a-icon__calendar a-icon--space-right a-tabs__icon" />
+      <span className="a-tabs__text">Tab 1</span>
+    </label>
+    <div className="a-tabs__content">
+      <h2 className="a-title--large">tab 1</h2>
+      <p className="a-text--secondary-medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In euismod nisi in orci mattis, ac iaculis orci lobortis.
+      </p>
+      <p className="a-text--secondary-medium">
+        Nullam imperdiet dolor a erat commodo laoreet a ut felis.
+        Nam consequat nisl eu efficitur suscipit.
+        Nulla dapibus cursus diam in convallis.
+      </p>
+    </div>
+
+    <input className="a-tabs__item" type="radio" id="tab2" name="tabs1" />
+    <label className="a-tabs__label" htmlFor="tab2">
+      <i className="a-icon a-icon__mail a-icon--space-right a-tabs__icon" />
+      <span className="a-tabs__text">Tab 2</span>
+    </label>
+    <div className="a-tabs__content">
+      <h2 className="a-title--large">tab 2</h2>
+      <p className="a-text--secondary-medium">
+        Integer id pulvinar odio, sit amet accumsan lacus.
+        Pellentesque accumsan sapien eget orci auctor, ac pulvinar orci porttitor.
+        Sed fermentum turpis sed egestas commodo.
+        In euismod nisi in orci mattis, ac iaculis orci lobortis.
+      </p>
+    </div>
+
+    <input className="a-tabs__item" type="radio" id="tab3" name="tabs1" />
+    <label className="a-tabs__label" htmlFor="tab3">
+      <i className="a-icon a-icon__profile a-icon--space-right a-tabs__icon" />
+      <span className="a-tabs__text">Tab 3</span>
+    </label>
+    <div className="a-tabs__content">
+      <h2 className="a-title--large">tab 3</h2>
+      <p className="a-text--secondary-medium">
+        Quisque dictum erat lectus, ac dapibus orci ultricies vitae.
+        Suspendisse id vestibulum turpis.
+      </p>
+    </div>
+
+    <input className="a-tabs__item" type="radio" id="tab4" name="tabs1" />
+    <label className="a-tabs__label" htmlFor="tab4">
+      <span className="a-tabs__text">Tab 4</span>
+    </label>
+    <div className="a-tabs__content">
+      <h2 className="a-title--large">tab 4</h2>
+      <p className="a-text--secondary-medium">
+        Nam consequat nisl eu efficitur suscipit vestibulum turpis.
+      </p>
+    </div>
+
+    <div className="a-tabs__border"></div>
+  </div>
+</Playground>

@@ -1,0 +1,47 @@
+/* Base */
+
+.a-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-color: var(--color-moon-500);
+  font-size: 24px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+}
+
+/* Sizes */
+
+.a-icon--size-small {
+  font-size: 16px;
+}
+
+.a-icon--size-big {
+  font-size: 32px;
+}
+
+/* Spaces */
+
+.a-icon--space-left {
+  margin-left: 8px;
+}
+
+.a-icon--space-right {
+  margin-right: 8px;
+}
+
+/* Icons */
+
+.a-icon__calendar {
+  mask-image: url(../../assets/icons/calendar.svg);
+}
+
+.a-icon__mail {
+  mask-image: url(../../assets/icons/mail.svg);
+}
+
+.a-icon__profile {
+  mask-image: url(../../assets/icons/profile.svg);
+}
