@@ -9,6 +9,10 @@ const selectors = {
   menuItem: '& .css-82rrzo, .css-82rrzo.active, .css-82rrzo:visited',
   menuSubitemsArea: '& .css-1qc5yjq',
   menuSubItem: '& .css-1l1jc95, .css-1l1jc95:visited',
+  menuBtn: '& .css-6pue65, .css-15exo54',
+  menuBtnShape: '& .css-14xo6fr, .css-1v3qlja',
+  mobileLogoArea: '& .css-12xm67f',
+  mobileMenu: '& .css-k33w14',
 
   /* Docz default elements (hidden) */
 
@@ -26,7 +30,7 @@ export default {
   base: '/',
   plugins: [
     css({
-      preprocessor: 'postcss'
+      preprocessor: 'postcss' /* stylelint-disable-line */
     })
   ],
   modifyBabelRc: babelrc => ({
@@ -74,7 +78,7 @@ export default {
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 312px'
         },
-        '@media (min-width: 420px)': {
+        '@media (min-width: 768px)': {
           [selectors.main]: {
             padding: '0 40px 40px 100px'
           }
@@ -97,7 +101,7 @@ export default {
           color: 'var(--color-uranus-700)'
         },
         [selectors.menuArea]: {
-          background: 'var(--color-space-100)',
+          backgroundColor: 'var(--color-space-100)',
           borderRight: '1px solid var(--color-space-300)',
           width: 320,
           [selectors.innerMenuArea]: {
@@ -129,6 +133,11 @@ export default {
             backgroundColor: 'var(--color-moon-900)'
           }
         },
+        '@media (max-width: 1119px)': {
+          [selectors.menuItem]: {
+            padding: '22px 39px'
+          }
+        },
         [selectors.menuSubitemsArea]: {
           margin: '5px 0 15px'
         },
@@ -148,12 +157,40 @@ export default {
           '&:before': {
             display: 'none'
           }
+        },
+        [selectors.menuBtn]: {
+          backgroundColor: 'transparent',
+          '&:before': {
+            display: 'none'
+          }
+        },
+        [selectors.menuBtnShape]: {
+          height: 0,
+          border: '1px solid var(--color-space-100)',
+          borderRadius: 3,
+          backgroundColor: 'var(--color-space-100)'
+        },
+        [selectors.mobileLogoArea]: {
+          padding: 0,
+          '&:before': {
+            display: 'none'
+          }
+        },
+        [selectors.mobileMenu]: {
+          backgroundColor: 'var(--color-space-100)'
+        },
+        '@media (max-width: 560px)': {
+          '& h1.css-bdhje3': {
+            /* Specificity hack for responsive h1 */
+            fontSize: 48
+          }
         }
       },
       h1: {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 64,
         fontWeight: 600,
+        letterSpacing: 'normal',
         color: 'var(--color-space-100)',
         margin: '103px 0 186px',
         ':before': {
@@ -190,7 +227,7 @@ export default {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 16,
         fontWeight: 600,
-        color: 'var(--color-moon-500)',
+        color: 'var(--color-moon-500)'
       },
       h4: {
         fontFamily: "'Lato', sans-serif",
@@ -201,6 +238,7 @@ export default {
       },
       playground: {
         padding: 16,
+        overflowX: 'scroll',
         '& > *': {
           boxSizing: 'border-box',
           margin: 12
