@@ -1,6 +1,7 @@
 .a-input {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .a-input > input,
@@ -22,6 +23,22 @@
   pointer-events: none;
   color: var(--color-moon-300);
   font: var(--font-secondary);
+}
+
+.a-input > input::placeholder {
+  color: var(--color-moon-300);
+}
+
+.a-input--messaging {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.a-input--messaging > input {
+  padding: 15px 16px;
+  margin-right: 24px;
+  flex: 1;
 }
 
 .a-input--validated > input {
@@ -98,7 +115,7 @@
 }
 
 .a-input > .a-input__error {
-  position: absolute;
+  position: relative;
   display: block;
   margin: 4px 16px;
   color: var(--color-mars-500);
@@ -111,6 +128,10 @@
   cursor: not-allowed;
   border: 1px solid var(--color-moon-200);
   background-color: var(--color-moon-100);
+}
+
+.a-input--disabled > input:disabled::placeholder {
+  color: var(--color-moon-300);
 }
 
 .a-input--disabled > input:disabled + label,
