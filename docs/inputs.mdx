@@ -74,6 +74,8 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 
 Text areas are used in contexts that demand long and descriptive texts.
 
+The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
 <Playground className='two-columns'>
   <div className='a-input'>
     <textarea name='random' id='textarea1' rows='10' cols='20'></textarea>
@@ -89,6 +91,8 @@ Text areas are used in contexts that demand long and descriptive texts.
 ## ghost inputs
 
 Ghost inputs are used in the foreground of colorful backgrounds or images, always displayed in white color in order to preserve good usability and legibility. Depending on the context, when the user starts typing, a white icon might appear on the right side of the component, fading in.
+
+The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
 This input style does not have a disabled state.
 
@@ -112,12 +116,51 @@ This input style does not have a disabled state.
   </div>
 </Playground>
 
+## control inputs
+
+These inputs are commonly used for money input data, in contexts that require increasing and decreasing the value in large amounts while still enabling users to type in numbers manually.
+
+They carry outline [icon buttons](/docs-buttons#icon-buttons) and these will always add or subtract R$ 100 or R$ 1.000.
+
+The buttons will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
+To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
+
+<Playground className='two-columns'>
+  <div className='a-input a-input--control'>
+    <input id='control1' type='number' data-step='100' defaultValue='0' />
+    <label id='controllabel1' htmlFor='control1'>
+      Control input (R$)
+    </label>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement'>
+      <i className='a-icon a-icon__input-dash a-icon--size-small' />
+    </button>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment'>
+      <i className='a-icon a-icon__input-plus a-icon--size-small' />
+    </button>
+  </div>
+  <div className='a-input a-input--control a-input--disabled'>
+    <input id='control2' type='number' data-step='100' disabled />
+    <label id='controllabel2' htmlFor='control2'>
+      Control input (R$)
+    </label>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement' disabled >
+      <i className='a-icon a-icon__input-dash a-icon--size-small' />
+    </button>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment' disabled >
+      <i className='a-icon a-icon__input-plus a-icon--size-small' />
+    </button>
+  </div>
+</Playground>
+
 ## messaging inputs
 
 Inputs used for messaging and similar contexts. They carry embedded [icon buttons](/docs-buttons#icon-buttons) that send the data,
 and their color can be changed as explained in the [Buttons](/docs-buttons) page.
 
-Click inside to view `:active` state.
+Click inside to view `:focus` state.
+
+The button color/state logic will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and`disabled` attribute on the `<input>` and `<button>` tags.
 
