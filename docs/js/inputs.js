@@ -1,3 +1,16 @@
+import maskInput from 'vanilla-text-mask/dist/vanillaTextMask';
+import createNumberMask from 'text-mask-addons/dist/createNumberMask';
+
+// Currency mask
+
+const currencyMask = createNumberMask({
+  prefix: '',
+  suffix: '',
+  thousandsSeparatorSymbol: '.',
+  allowDecimal: true,
+  decimalSymbol: ','
+});
+
 // Handle floating label
 
 export const initFloatingLabel = () => {
@@ -7,7 +20,7 @@ export const initFloatingLabel = () => {
     const verifyValue = (input, label) => {
       if (!label) return;
 
-      if (input.value) {
+      if (input.value || input.placeholder) {
         label.classList.add('a-input--floating-label');
       } else {
         label.classList.remove('a-input--floating-label');
@@ -107,20 +120,31 @@ export const initControlInputsEvents = () => {
 
       const updateControlInputValue = operation => {
         const currentControlInputValue = currentControlInput.value
-          ? parseFloat(currentControlInput.value)
+          ? parseFloat(
+              currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
+            )
           : 0;
         let step = dataStep;
 
         if (operation === 'decrement') {
           if (currentControlInputValue < dataStep) {
-            currentControlInput.value = 0;
+            currentControlInput.value = '0,00';
             return;
           }
 
           step = dataStep * -1;
         }
 
-        currentControlInput.value = currentControlInputValue + step;
+        currentControlInput.value = parseFloat(currentControlInputValue + step)
+          .toFixed(2)
+          .replace(/\./g, ',');
+
+        maskInput({
+          inputElement: currentControlInput,
+          mask: currencyMask,
+          guide: false
+        });
+
         currentControlInput.dispatchEvent(new Event('change'));
       };
 
@@ -135,10 +159,68 @@ export const initControlInputsEvents = () => {
   });
 };
 
+// Handle masked inputs
+
+export const initMaskedInputs = () => {
+  window.requestAnimationFrame(() => {
+    // Date masked inputs
+    const dateMaskInputs = document.querySelectorAll(
+      '[placeholder="DD/MM/YYYY"]'
+    );
+    dateMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+        guide: false
+      });
+    });
+
+    // CPF masked input
+    const cpfMaskInputs = document.querySelectorAll(
+      '[placeholder="000.000.000-00"]'
+    );
+    cpfMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: [
+          /\d/,
+          /\d/,
+          /\d/,
+          '.',
+          /\d/,
+          /\d/,
+          /\d/,
+          '.',
+          /\d/,
+          /\d/,
+          /\d/,
+          '-',
+          /\d/,
+          /\d/
+        ],
+        guide: false
+      });
+    });
+
+    // Currency masked inputs
+    const currencyMaskInputs = document.querySelectorAll(
+      '[placeholder="0,00"]'
+    );
+    currencyMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: currencyMask,
+        guide: false
+      });
+    });
+  });
+};
+
 const HandleInputEvents = () => {
   initFloatingLabel();
   initMessagingInputEvent();
   initControlInputsEvents();
+  initMaskedInputs();
   return null;
 };
 
