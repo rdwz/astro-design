@@ -119,6 +119,10 @@ In case you absolutely have to customize one or more properties in an Astro comp
 
 It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](CONTRIBUTING.md) to learn how it works.
 
+## Troubleshooting
+
+- If you copy the markup from an example in our documentation, don't forget to change "className" to "class" if you're not in a React environment like our docs are ;)
+
 ## Contact us
 
 Found a bug? Please see if it was already reported on our [issues page](https://github.com/magnetis/astro/issues). If you can't find a matching report, you can [open a new issue](https://github.com/magnetis/astro/issues/new) including as much information as you can gather. We appreciate it!
