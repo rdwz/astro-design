@@ -10,6 +10,7 @@
 - [Adding Astro to your project](#adding-astro-to-your-project)
 - [Using Astro](#using-astro)
 - [Contributing](#contributing)
+- [Troubleshooting](#troubleshooting)
 - [Contact us](#contact-us)
 
 ## Introduction
