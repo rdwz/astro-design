@@ -14,7 +14,8 @@ const selectors = {
   mobileLogoArea: '& .Logo__Wrapper-bzwKYh.kYsbLl',
   mobileMenu: '& .Sidebar__Wrapper-dMteFe',
   playgroundWrapper: playgroundSelector,
-  playgroundChildrens: `${playgroundSelector} > div`,
+  playgroundChildren: `${playgroundSelector} > div`,
+  headerTitle: '& .H1-ecIwba',
 
   /* Docz default elements (hidden) */
 
@@ -31,6 +32,9 @@ const selectors = {
 export default {
   styles: {
     body: `
+      overflow: auto;
+      line-height: 1.5;
+
       ${selectors.editPageBtn} {
         display: none;
       }
@@ -105,10 +109,15 @@ export default {
       ${selectors.menuArea} {
         background-color: var(--color-space-100);
         border-right: 1px solid var(--color-space-300);
-        width: 320px;
+
+        @media (min-width: 1120px) {
+          width: 320px;
+        }
 
         ${selectors.innerMenuArea} {
-          width: 320px;
+          @media (min-width: 1120px) {
+            width: 320px;
+          }
         }
       }
 
@@ -200,7 +209,7 @@ export default {
       }
 
       @media (max-width: 560px) {
-        & h1.-bdhje3 {
+        ${selectors.headerTitle} {
           font-size: 48px;
         }
       }
@@ -210,7 +219,7 @@ export default {
         overflow-x: scroll;
       }
 
-      ${selectors.playgroundChildrens} {
+      ${selectors.playgroundChildren} {
         & > * {
           box-sizing: border-box;
           margin: 12px;
@@ -228,6 +237,8 @@ export default {
         }
 
         &.gradient-bg {
+          padding: 16px;
+          margin: -16px;
           background-image: var(--gradient-andromeda);
         }
       }
