@@ -12,23 +12,22 @@ const currencyMask = createNumberMask({
 });
 
 const pinLabelColors = (inputWrapper, value) => {
-  
   const input = inputWrapper.querySelector('input');
   const label = inputWrapper.querySelector('label');
-  value = value || ( input && input.value );
+  value = value || (input && input.value);
 
-  if(
-    inputWrapper.classList.contains('a-input--invalid') && 
-    value && 
+  if (
+    inputWrapper.classList.contains('a-input--invalid') &&
+    value &&
     !label.classList.contains('a-input--invalid')
   ) {
     label.classList.add('a-label--invalid');
   }
-  
-  if(label && label.classList.contains('a-label--invalid') && !value ) {
-    label.classList.remove("a-label--invalid");
+
+  if (label && label.classList.contains('a-label--invalid') && !value) {
+    label.classList.remove('a-label--invalid');
   }
-}
+};
 
 // Handle floating label
 
@@ -40,9 +39,9 @@ export const initFloatingLabel = () => {
       if (!label) return;
 
       if (input.value || input.placeholder) {
-        label.classList.add('a-input--floating-label');
+        label.classList.add('a-input__label--floating');
       } else {
-        label.classList.remove('a-input--floating-label');
+        label.classList.remove('a-input__label--floating');
       }
     };
 
@@ -137,10 +136,10 @@ export const initControlInputsEvents = () => {
         currentControlInput.getAttribute('data-step')
       );
       const decrementButton = input.querySelector(
-        '.a-input--control__decrement'
+        '.a-input__btn-control:nth-of-type(1)'
       );
       const incrementButton = input.querySelector(
-        '.a-input--control__increment'
+        '.a-input__btn-control:nth-of-type(2)'
       );
 
       const updateControlInputValue = operation => {
