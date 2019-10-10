@@ -12,21 +12,21 @@
 .a-input > textarea {
   width: 100%;
   padding: 25px 16px 5px;
-  border: 1px solid var(--color-moon-500);
-  border-radius: 8px;
-  background-color: var(--color-space-100);
   font: var(--font-secondary);
   color: var(--font-color);
+  background-color: var(--color-space-100);
+  border: 1px solid var(--color-moon-500);
+  border-radius: 8px;
 }
 
 .a-input > label {
   position: absolute;
   top: 16px;
   left: 16px;
-  transition: 0.2s ease all;
-  pointer-events: none;
-  color: var(--color-moon-400);
   font: var(--font-secondary);
+  color: var(--color-moon-400);
+  pointer-events: none;
+  transition: 0.2s ease all;
 }
 
 .a-input > input::placeholder {
@@ -36,9 +36,9 @@
 /* Messaging inputs */
 
 .a-input--messaging {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .a-input--messaging > input {
@@ -54,9 +54,9 @@
 .a-input--ghost.a-input--validated > input,
 .a-input--ghost.a-input--validated > input:focus,
 .a-input--ghost.a-input--invalid > input {
-  border: 1px solid var(--color-space-100);
-  background-color: transparent;
   color: var(--color-space-100);
+  background-color: transparent;
+  border: 1px solid var(--color-space-100);
 }
 
 .a-input--ghost > label,
@@ -89,24 +89,24 @@
 /* Control input buttons */
 
 .a-input__btn-control {
-  display: inline-block;
   position: absolute;
   top: 16px;
   right: 54px;
-  margin: -4px 0 -3px;
+  display: inline-block;
   padding: 2px;
-  border: 2px solid transparent;
-  border-radius: 16px;
-  text-align: center;
+  margin: -4px 0 -3px;
+  overflow: hidden;
   font: var(--font-primary);
   font-size: var(--font-size-1-5base);
   line-height: 18px;
   color: var(--color-uranus-500);
-  background-color: transparent;
-  overflow: hidden;
+  text-align: center;
   white-space: nowrap;
-  transition: all 0.3s ease;
   cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 
 .a-input__btn-control:focus {
@@ -119,22 +119,22 @@
 
 .a-input__btn-control:hover:not(:disabled),
 .a-input__btn-control:focus:not(:disabled) {
+  color: var(--color-uranus-400);
   background-color: var(--color-moon-100);
   border-color: var(--color-moon-100);
-  color: var(--color-uranus-400);
 }
 
 .a-input__btn-control:active:not(:disabled) {
+  color: var(--color-uranus-600);
   background-color: var(--color-moon-200);
   border-color: var(--color-moon-200);
-  color: var(--color-uranus-600);
 }
 
 .a-input__btn-control:disabled {
+  color: var(--color-space-100);
   cursor: not-allowed;
   background-color: transparent;
   border-color: transparent;
-  color: var(--color-space-100);
 }
 
 .a-input__btn-control .a-icon {
@@ -173,75 +173,75 @@
 }
 
 .a-file-preview__item {
-  background-color: var(--color-moon-100);
-  height: 80px;
-  width: 80px;
-  border-radius: 4px;
-  margin-right: 32px;
   position: relative;
-  vertical-align: middle;
   display: flex;
+  width: 80px;
+  height: 80px;
+  margin-right: 32px;
+  vertical-align: middle;
+  background-color: var(--color-moon-100);
+  border-radius: 4px;
   justify-content: middle;
   align-items: center;
 }
 
 .a-file-preview__item img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
   border-radius: 4px;
+  object-fit: cover;
 }
 
 .a-file-preview__item button {
   position: absolute;
-  right: -6px;
   top: -6px;
-  font-size: 12px;
-  height: 20px;
+  right: -6px;
   width: 20px;
-  border-radius: 50%;
+  height: 20px;
   padding: 0;
-  border: 0;
+  font-size: 12px;
   cursor: pointer;
+  border: 0;
+  border-radius: 50%;
   outline: none;
 }
 
 .a-file-preview__item i {
-  height: 20px;
   width: 20px;
+  height: 20px;
   margin-left: -1px;
   background-color: var(--color-moon-500);
 }
 
 .a-file-preview__item p {
-  font-size: calc(var(--font-size-base) * 1.25);
+  max-width: 80px;
   padding: 12px;
   margin: 0;
+  font-size: calc(var(--font-size-base) * 1.25);
   word-wrap: break-word;
-  max-width: 80px;
 }
 
 .a-file-preview__item p.a-file-preview__item--text-truncate {
   width: 80px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Focus state */
 
 .a-input > input:focus,
 .a-input > textarea:focus {
-  outline: none;
   border: 1px solid var(--color-uranus-500);
+  outline: none;
 }
 
 .a-input > input:focus + label,
 .a-input > textarea:focus + label {
   top: 8px;
-  color: var(--color-uranus-500);
   font-size: var(--font-size-1-5base);
   font-weight: 700;
+  color: var(--color-uranus-500);
 }
 
 /* Floating label state */
@@ -281,8 +281,8 @@
   width: 32px;
   height: 32px;
   content: '';
-  mask-image: url('../../assets/icons/circle-check.svg');
   background-color: var(--color-earth-400);
+  mask-image: url('../../assets/icons/circle-check.svg');
 }
 
 /* Invalid state */
@@ -314,19 +314,19 @@
   position: relative;
   display: block;
   margin: 4px 16px;
-  color: var(--color-mars-500);
   font: var(--font-secondary);
   font-size: var(--font-size-1-5base);
+  color: var(--color-mars-500);
 }
 
 /* Disabled state */
 
 .a-input--disabled > input:disabled,
 .a-input--disabled > textarea:disabled {
-  cursor: not-allowed;
-  border: 1px solid var(--color-moon-200);
-  background-color: var(--color-moon-100);
   color: var(--color-moon-300);
+  cursor: not-allowed;
+  background-color: var(--color-moon-100);
+  border: 1px solid var(--color-moon-200);
 }
 
 .a-input--disabled.a-input--validated::after,
@@ -340,8 +340,8 @@
 
 .a-input--disabled > input:disabled + label,
 .a-input--disabled > textarea:disabled + label {
-  cursor: not-allowed;
   color: var(--color-moon-300);
+  cursor: not-allowed;
 }
 
 /* Large size */

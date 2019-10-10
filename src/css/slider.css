@@ -14,19 +14,19 @@
 /* Reset standard input styles */
 
 .a-slider > input[type='range'] {
-  appearance: none;
-  outline: none;
   width: 100%;
+  outline: none;
+  appearance: none;
 }
 
 /* Labels */
 
 .a-slider > label {
-  order: 1;
   display: flex;
   margin-bottom: 20px;
   font: var(--font-secondary);
   color: var(--font-color);
+  order: 1;
 }
 
 .a-slider__value {
@@ -41,16 +41,16 @@
 /* Chrome - always replicate styles for each browser, it's the only way :( */
 
 .a-slider > input[type='range']::-webkit-slider-runnable-track {
+  display: flex;
+  height: 5px;
+  background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
       to right,
       var(--color-uranus-500) var(--slider-percentage),
       transparent var(--slider-percentage)
     );
-  background-color: var(--color-moon-300);
   border-radius: 4px;
-  height: 5px;
-  display: flex;
   align-items: center;
 }
 
@@ -59,14 +59,14 @@
 }
 
 .a-slider > input[type='range']::-webkit-slider-thumb {
-  appearance: none;
   width: 28px;
   height: 28px;
-  border-radius: 100%;
-  background-color: var(--color-space-100);
-  box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
   cursor: pointer;
+  background-color: var(--color-space-100);
+  border-radius: 100%;
+  box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
   transition: all 0.3s ease;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-webkit-slider-thumb:hover,
@@ -81,9 +81,9 @@
 }
 
 .a-slider > input[type='range']:disabled::-webkit-slider-runnable-track {
-  background-image: none;
-  background-color: var(--color-moon-200);
   cursor: not-allowed;
+  background-color: var(--color-moon-200);
+  background-image: none;
 }
 
 .a-slider > input[type='range']:disabled::-webkit-slider-thumb {
@@ -94,16 +94,16 @@
   Some styles below are slightly different from Chrome */
 
 .a-slider > input[type='range']::-moz-range-track {
+  display: flex;
+  height: 5px;
+  background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
       to right,
       var(--color-uranus-500) var(--slider-percentage),
       transparent var(--slider-percentage)
     );
-  background-color: var(--color-moon-300);
   border-radius: 4px;
-  height: 5px;
-  display: flex;
   align-items: center;
 }
 
@@ -112,15 +112,15 @@
 }
 
 .a-slider > input[type='range']::-moz-range-thumb {
-  appearance: none;
   width: 28px;
   height: 28px;
+  cursor: pointer;
+  background-color: var(--color-space-100);
   border: none;
   border-radius: 100%;
-  background-color: var(--color-space-100);
   box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
-  cursor: pointer;
   transition: all 0.3s ease;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-moz-range-thumb:hover {
@@ -134,14 +134,14 @@
 }
 
 .a-slider > input[type='range']:disabled {
-  background-color: transparent;
   cursor: not-allowed;
+  background-color: transparent;
 }
 
 .a-slider > input[type='range']:disabled::-moz-range-track {
-  background-image: none;
-  background-color: var(--color-moon-200);
   cursor: not-allowed;
+  background-color: var(--color-moon-200);
+  background-image: none;
 }
 
 .a-slider > input[type='range']:disabled::-moz-range-thumb {
@@ -151,16 +151,16 @@
 /* IE - always replicate styles for each browser, it's the only way :( */
 
 .a-slider > input[type='range']::-ms-track {
+  display: flex;
+  height: 5px;
+  background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
       to right,
       var(--color-uranus-500) var(--slider-percentage),
       transparent var(--slider-percentage)
     );
-  background-color: var(--color-moon-300);
   border-radius: 4px;
-  height: 5px;
-  display: flex;
   align-items: center;
 }
 
@@ -169,14 +169,14 @@
 }
 
 .a-slider > input[type='range']::-ms-thumb {
-  appearance: none;
   width: 28px;
   height: 28px;
-  border-radius: 100%;
-  background-color: var(--color-space-100);
-  box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
   cursor: pointer;
+  background-color: var(--color-space-100);
+  border-radius: 100%;
+  box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
   transition: all 0.3s ease;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-ms-thumb:hover {
@@ -190,9 +190,9 @@
 }
 
 .a-slider > input[type='range']:disabled::-ms-track {
-  background-image: none;
-  background-color: var(--color-moon-200);
   cursor: not-allowed;
+  background-color: var(--color-moon-200);
+  background-image: none;
 }
 
 .a-slider > input[type='range']:disabled::-ms-thumb {

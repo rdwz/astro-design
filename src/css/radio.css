@@ -15,17 +15,17 @@
   width: var(--radio-circle-size);
   height: var(--radio-circle-size);
   margin-top: 4px;
+  cursor: pointer;
   opacity: 0;
   order: 1;
-  cursor: pointer;
 }
 
 /* Label design */
 
 .a-radio > label {
   padding-left: 8px;
-  cursor: pointer;
   font: var(--font-secondary);
+  cursor: pointer;
   order: 2;
 }
 
@@ -37,9 +37,9 @@
   height: var(--radio-circle-size);
   margin-top: 4px;
   content: '';
+  background-color: var(--color-space-100);
   border: 2px solid var(--color-moon-500);
   border-radius: 100%;
-  background-color: var(--color-space-100);
 }
 
 /* Middle alignment modifier */
@@ -68,8 +68,8 @@
 .a-radio--disabled > label,
 .a-radio--disabled > input[type='radio']:disabled,
 .a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {
-  cursor: not-allowed;
   color: var(--color-moon-200);
+  cursor: not-allowed;
 }
 
 .a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {

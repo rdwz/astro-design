@@ -4,11 +4,11 @@
   display: inline-block;
   width: 1em;
   height: 1em;
+  font-size: var(--font-size-4base);
   vertical-align: middle;
   background-color: var(--color-moon-900);
-  font-size: var(--font-size-4base);
-  mask-repeat: no-repeat;
   mask-position: center center;
+  mask-repeat: no-repeat;
   mask-size: contain;
 }
 
