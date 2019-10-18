@@ -15,7 +15,7 @@ Please note that **this does NOT affect TITLE classes!**
 
 1.2. `a-text--secondary-small` becomes `a-text--secondary-very-small`
 
-## 2. Find any Astro fonts with a custom size of `14px` and apply the new `text-small` classes to them.
+## 2. Find any Astro fonts with a custom size of 14px and apply the "text small" classes to them.
 
 Before this update, if we ever got a spec with a `14px` font size, we had to manually force that size because it was not supported. Now it is, for both Poppins and Lato! 
 
