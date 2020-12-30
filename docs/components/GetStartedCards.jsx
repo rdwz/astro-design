@@ -27,7 +27,7 @@ export default () => (
 
       <a
         className='a-btn a-btn--earth a-btn--medium'
-        href='https://github.com/magnetis/astro/blob/master/README.md#adding-astro-to-your-project'
+        href='https://github.com/magnetis/astro/blob/main/README.md#adding-astro-to-your-project'
       >
         read install docs
       </a>
@@ -46,7 +46,7 @@ export default () => (
 
       <a
         className='a-btn a-btn--earth a-btn--medium'
-        href='https://github.com/magnetis/astro/blob/master/README.md#using-astro'
+        href='https://github.com/magnetis/astro/blob/main/README.md#using-astro'
       >
         view usage docs
       </a>
@@ -79,7 +79,7 @@ export default () => (
 
       <a
         className='a-btn a-btn--earth a-btn--medium'
-        href='https://github.com/magnetis/astro/blob/master/CONTRIBUTING.md'
+        href='https://github.com/magnetis/astro/blob/main/CONTRIBUTING.md'
       >
         see contributing guide
       </a>

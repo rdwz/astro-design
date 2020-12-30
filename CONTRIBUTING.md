@@ -78,17 +78,17 @@ Wanna dive deeper into Docz? You can [read their tutorial](https://www.docz.site
 
 ### Staging the documentation
 
-Our staging environment is currently set up on Netlify with automatic deploys. This means that every time there's a new commit on any branch, the changes are published to a temporary URL, which you can find under "Checks" in the Pull Request page. 
+Our staging environment is currently set up on Netlify with automatic deploys. This means that every time there's a new commit on any branch, the changes are published to a temporary URL, which you can find under "Checks" in the Pull Request page.
 
 After the Netlify item has a green checkmark, just click "Details" and you will be redirected to your staging environment with the latest version of your branch! Pretty sweet, right?
 
 ### Publishing your changes to Astro online docs
 
-We **don't** update the online docs everytime there's a new merge to master. You should only do this if you're creating a new release. No spoilers! ;)
+We **don't** update the online docs everytime there's a new merge to main. You should only do this if you're creating a new release. No spoilers! ;)
 
 Here's how to deploy to GitHub Pages:
 
-In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` to deploy.
+In your terminal, after merging: checkout to main, do `git pull` and run `yarn docs:publish` to deploy.
 
 Visit [astro.magnetis.com.br](https://astro.magnetis.com.br/) and make sure your changes go live! 🎉 While you're there, please check if everything still looks okay.
 
